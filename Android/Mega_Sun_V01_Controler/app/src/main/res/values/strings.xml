@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources >
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="about"><![CDATA[This App controls the Heliostaat or Sunfollower. For this version only the Azimuth and the
+        Altitude.<p>
+        It only works with a dedicated Arduino Program, written by the auteur.<p>
+        &#169; 2013 by Jeff Friesen for the about screen.<br>
+        &#169; 2016 by BHJ Drahmann for the app.<br>
+        All rights reserved.<p>
+        Based on the standard Bluetoothchat app from Android examples, modified by BHJ Drahmann for connection with Arduino.<p>
+        <a href="http://drahmann.nl/"> www.drahmann.nl</a><p>
+        <a href="mailto:bernard@drahmann.nl">bernard@drahmann.nl</a><p>
+        tel: +31.6.53.169.253<p>
+        <i>This app is distributed on an "as is" basis, without warranty.</i>]]></string>
+    <string name="close">Close</string>
+    <string name="menu_about">About</string>
+
+    <string name="desc">beschrijving1</string>
+    <string name="btn_Exit">Exit</string>
+    <string name="tv_verbinding">Maak verbinding</string>
+    <string name="btbutton">Maak verbinding</string>
+    <string name="heliostaat">Heliostaat</string>
+    <string name="zonnevolger">Zonnevolger</string>
+    <string name="settings">Settings</string>
+    <string name="tvgoolat">zoeken</string>
+    <string name="tvzonlong">tvZonLong</string>
+    <string name="tvzonlat">tvZonLat</string>
+    <string name="plaats">Plaats</string>
+    <string name="google">google</string>
+    <string name="tvgoolong">zoeken</string>
+    <string name="lat_">latitude:</string>
+    <string name="long_">longitude:</string>
+    <string name="tijd">Tijd</string>
+    <string name="tvgootijd">zoeken</string>
+    <string name="tvgoodatum">zoeken</string>
+    <string name="tvzontijd">tvZonTijd</string>
+    <string name="tvzondatum">tvZonDatum</string>
+    <string name="machine_prompt">Choose a machine</string>
+    <string name="northern">northern</string>
+    <string name="ZonNorth">tvZonNorth</string>
+    <string name="zomertijd">zomertijd</string>
+    <string name="ZonZomertijd">tvZonZomertijd</string>
+    <string name="tijdzone">tijdzone:</string>
+    <string name="zoeken">zoeken</string>
+    <string name="zonzone">tvZonZone</string>
+    <string name="alt">altitude</string>
+    <string name="az">azimuth</string>
+    <string name="Zon">Suns</string>
+    <string name="machine_num">Mach. #</string>
+    <string name="wachten">wachten</string>
+    <string name="target">Target</string>
+
+
+</resources>
+

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/horizontal_page_margin"
+        android:paddingRight="@dimen/horizontal_page_margin"
+        android:paddingTop="@dimen/vertical_page_margin"
+        android:paddingBottom="@dimen/vertical_page_margin" >
+
+        <TextView
+            android:id="@+id/tvDatum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10sp"
+            android:hint="@string/wachten"/>
+
+        <TextView
+            android:id="@+id/tvTijd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="120sp"
+            android:hint="@string/wachten"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alt"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="240sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toEndOf="@+id/textView1"
+            android:layout_marginStart="50sp"
+            android:text="@string/az"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/horizontal_page_margin"
+        android:paddingRight="@dimen/horizontal_page_margin"
+        android:paddingTop="@dimen/vertical_page_margin"
+        android:paddingBottom="@dimen/vertical_page_margin" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="100dp"
+                    android:text="@string/Zon"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvZonalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_marginStart="155dp"
+                    android:textSize="15sp"
+                    android:hint="@string/wachten" />
+
+                <TextView
+                    android:id="@+id/tvZonaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_marginStart="282dp"
+                    android:textSize="15sp"
+                    android:hint="@string/wachten" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/machine_num"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvMachNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_marginStart="65dp"
+                    android:textSize="15sp"
+                    android:hint="@string/wachten" />
+
+                <TextView
+                    android:id="@+id/tvMachalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4"
+                    android:layout_marginStart="155dp"
+                    android:textSize="15sp"
+                    android:hint="@string/wachten" />
+
+                <TextView
+                    android:id="@+id/tvMachaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4"
+                    android:layout_marginStart="282dp"
+                    android:textSize="15sp"
+                    android:hint="@string/wachten" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_below="@+id/textView4"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/target"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvTargetalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView5"
+                    android:layout_alignStart="@+id/textView5"
+                    android:layout_marginStart="155dp"
+                    android:textSize="15sp"
+                    android:hint="@string/wachten" />
+
+                <TextView
+                    android:id="@+id/tvTargetaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView5"
+                    android:layout_alignStart="@+id/textView5"
+                    android:layout_marginStart="282dp"
+                    android:textSize="15sp"
+                    android:hint="@string/wachten" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/horizontal_page_margin"
+        android:paddingRight="@dimen/horizontal_page_margin"
+        android:paddingTop="@dimen/vertical_page_margin"
+        android:paddingBottom="@dimen/vertical_page_margin" >
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/google"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="240sp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_marginStart="50sp"
+            android:text="@string/zonnevolger"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/horizontal_page_margin"
+        android:paddingRight="@dimen/horizontal_page_margin"
+        android:paddingTop="@dimen/vertical_page_margin"
+        android:paddingBottom="@dimen/vertical_page_margin" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="100dp"
+                    android:text="@string/plaats"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/long_"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGooLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_marginStart="50dp"
+                    android:textSize="15sp"
+                    android:text="@string/tvgoolong" />
+
+                <ImageButton
+                    android:id="@+id/ImagebtnLong"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="-15sp"
+                    android:layout_alignTop="@+id/tvGooLong"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/button_arrow" />
+
+                <TextView
+                    android:id="@+id/tvZonLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvGooLong"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_marginStart="200dp"
+                    android:text="@string/tvzonlong"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/lat_"
+                    android:textSize="15sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/tvGooLat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView3"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignStart="@+id/tvGooLong"
+                    android:textSize="15sp"
+                    android:text="@string/tvgoolat" />
+
+                <ImageButton
+                    android:id="@+id/ImagebtnLat"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_alignStart="@+id/ImagebtnLong"
+                    android:layout_marginTop="-15sp"
+                    android:layout_alignTop="@+id/tvGooLat"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/button_arrow" />
+
+                <TextView
+                    android:id="@+id/tvZonLat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvGooLat"
+                    android:layout_alignStart="@+id/tvZonLong"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/tvzonlat"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/cbNorth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvGooLat"
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_marginStart="11dp"
+                    android:text="northern"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvZonNorth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cbNorth"
+                    android:layout_alignBottom="@+id/cbNorth"
+                    android:layout_alignStart="@+id/tvZonDatum"
+                    android:text="tvZonNorth"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_below="@+id/cbNorth"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/tijd"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvGooDatum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tvGooTijd"
+                    android:layout_alignTop="@+id/TextView6"
+                    android:text="@string/tvgoodatum"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvZonDatum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvGooDatum"
+                    android:layout_alignBottom="@+id/tvGooDatum"
+                    android:layout_alignStart="@+id/tvZonTijd"
+                    android:text="@string/tvzondatum"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGooTijd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tvGooLat"
+                    android:layout_below="@+id/tvGooDatum"
+                    android:text="@string/tvgootijd"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvZonTijd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvGooTijd"
+                    android:layout_alignBottom="@+id/tvGooTijd"
+                    android:layout_alignStart="@+id/tvZonLat"
+                    android:textSize="15sp"
+                    android:text="@string/tvzontijd" />
+
+                <CheckBox
+                    android:id="@+id/cbZomertijd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvZonZomertijd"
+                    android:layout_alignBottom="@+id/tvZonZomertijd"
+                    android:layout_alignStart="@+id/cbNorth"
+                    android:text="zomertijd"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvZonZomertijd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tvZonTijd"
+                    android:layout_below="@+id/tvZonTijd"
+                    android:text="tvZonZomertijd"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvGooZone"
+                    android:layout_alignBottom="@+id/tvGooZone"
+                    android:layout_alignStart="@+id/textView2"
+                    android:text="tijdzone:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGooZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/tvGooTijd"
+                    android:layout_below="@+id/cbZomertijd"
+                    android:text="zoeken"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvZonZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvGooZone"
+                    android:layout_alignBottom="@+id/tvGooZone"
+                    android:layout_alignStart="@+id/tvZonLat"
+                    android:text="tvZonZone"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/ImagebtnDateTime"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_above="@+id/tvGooZone"
+                    android:layout_alignStart="@+id/ImagebtnLat"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/button_arrow" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_below="@+id/tvGooZone"
+                    android:layout_marginTop="19dp"
+                    android:text="Target"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/spmachine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/tvGooZone"
+                    android:layout_alignTop="@+id/textView8"
+                    android:layout_toEndOf="@+id/textView8"
+                    android:prompt="@string/machine_prompt" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
