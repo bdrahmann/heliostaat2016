@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Mega_SunTracking_Heliostat_Program_V098", "Mega_SunTracking_Heliostat_Program_V098.cppproj", "{F5CBB323-556B-42EC-BAB5-8C30EC8B81AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5CBB323-556B-42EC-BAB5-8C30EC8B81AE}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F5CBB323-556B-42EC-BAB5-8C30EC8B81AE}.Debug|AVR.Build.0 = Debug|AVR
+		{F5CBB323-556B-42EC-BAB5-8C30EC8B81AE}.Release|AVR.ActiveCfg = Release|AVR
+		{F5CBB323-556B-42EC-BAB5-8C30EC8B81AE}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
